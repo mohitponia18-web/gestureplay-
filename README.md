@@ -54,7 +54,8 @@ Operate your media system using high-accuracy custom hand movements captured via
     ├── to_get.jpg
     └── pexels-pavel-danilyuk-8438979.jpg
 
-### Why this structure works:
-* **Clear Value Proposition:** Anyone opening your repository immediately understands that **GesturePlay** is a touchless, ML-powered system.
-* **Architecture Block:** It outlines the exact data flow from the camera to your browser scripts.
-* **Gesture Table:** It lists your specific custom command overrides (like the *Enmaten Sign* and *Hands Crossed*) clearly so reviewers can see what makes your project unique.
+# GesturePlay: Smart Touchless Media Control System
+
+[![Live Demo](https://img.shields.io/badge/Demo-Live_Link-brightgreen?style=for-the-badge)](YOUR_LIVE_LINK_HERE)
+
+> 🔗 **Test the live application here:** [GesturePlay Live Demo]()
