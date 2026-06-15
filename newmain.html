@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Experience | Premium Portal</title>
+    <link rel="stylesheet" href="newmain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans:wght@400;600&family=Economica:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Fully Transparent Minimalist Navbar Styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            z-index: 1000;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .nav-logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1e3a8a; /* Deep elegant slate blue */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 3rem; /* Generous spacing for a minimalist feel */
+        }
+
+        .nav-links a {
+            color: #475569; /* Balanced dark gray-blue for visibility */
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            padding: 0.4rem 0;
+            transition: color 0.3s ease;
+        }
+
+        /* Stylish Minimalist Hover & Active Link Animation */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #2563eb; /* Accent blue underline */
+            transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .nav-links a:hover::after, 
+        .nav-links a.active::after {
+            width: 100%; /* Expands the line smoothly from left to right */
+        }
+
+        .nav-links a.active {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        /* Adjusting hero spacing to prevent text collision under fixed navbar */
+        .hero {
+            padding-top: 100px; 
+        }
+
+        /* Smooth mobile adjustment */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem 1.5rem;
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            .nav-links {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Integrated Fully Transparent Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">GesturePlay</div>
+        <ul class="nav-links">
+            <li><a href="chatgptkifile.html">Home</a></li>
+            <li><a href="#" class="active">Main Menu</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">CHOOSE THE FORMAT</h1>
+        </div>
+    </header>
+
+    <main class="format-section">
+        <!-- Option 1: Audio Controls -->
+        <a href="music control.html" class="format-card">
+            <div class="card-image-wrapper">
+                <img src="music.png" alt="Audio">
+                <div class="card-overlay"></div>
+            </div>
+            <div class="card-info">
+                <h2 class="format-title">Audio</h2>
+                <span class="format-subtext">mp3 / high-fidelity</span>
+            </div>
+        </a>
+
+        <!-- Option 2: Video Controls -->
+        <a href="represntation2.html" class="format-card">
+            <div class="card-image-wrapper">
+                <img src="pexels-donaldtong94-66134.jpg" alt="Video">
+                <div class="card-overlay"></div>
+            </div>
+            <div class="card-info">
+                <h2 class="format-title">Video</h2>
+                <span class="format-subtext">mp4 / ultra-hd</span>
+            </div>
+        </a>
+
+        <!-- Option 3: Testing -->
+        <a href="pose detected 2.0.html" class="format-card">
+            <div class="card-image-wrapper">
+                <img src="pexels-karolina-grabowska-4498366.jpg" alt="Tutorial">
+                <div class="card-overlay"></div>
+            </div>
+            <div class="card-info">
+                <h2 class="format-title">Test</h2>
+                <span class="format-subtext">interactive / web</span>
+            </div>
+        </a>
+    </main>
+
+</body>
+</html>

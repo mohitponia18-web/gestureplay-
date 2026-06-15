@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GesturePlay Start</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base configuration adjusted for box boundaries */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: url("to_get.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
+    }
+
+    /* Fully Transparent Minimalist Navbar Styling */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #1e3a8a; /* Deep elegant slate blue */
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 3rem; /* Generous spacing for a minimalist feel */
+    }
+
+    .nav-links a {
+      color: #475569; /* Balanced dark gray-blue for visibility */
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      position: relative;
+      padding: 0.4rem 0;
+      transition: color 0.3s ease;
+    }
+
+    /* Stylish Minimalist Hover & Active Link Animation */
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #2563eb; /* Accent blue underline */
+      transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    .nav-links a:hover::after, 
+    .nav-links a.active::after {
+      width: 100%; /* Expands the line smoothly from left to right */
+    }
+
+    .nav-links a.active {
+      color: #2563eb;
+      font-weight: 600;
+    }
+
+    /* Animated Welcome Content Block Container */
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 80px; /* Ensures text clearing space below navbar */
+    }
+
+    .gesture-box {
+      font-size: 54px;
+      font-weight: bold;
+      color: white;
+      border: 3px solid white;
+      border-radius: 20px;
+      padding: 20px 40px;
+      opacity: 0;
+      animation: fadeIn 3s ease-in-out forwards;
+      text-align: center;
+    }
+
+    .start-button {
+      margin-top: 30px;
+      font-size: 20px;
+      padding: 12px 28px;
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeInButton 1s ease-in-out forwards;
+      animation-delay: 2s;
+      transition: background-color 0.3s, color 0.3s, transform 0.1s;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    .start-button:hover {
+      background-color: white;
+      color: #000;
+    }
+
+    .start-button:active {
+      transform: scale(0.97);
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInButton {
+      to { opacity: 1; }
+    }
+
+    /* Smooth mobile adjustment */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+        gap: 1.2rem;
+        position: absolute;
+      }
+      .nav-links {
+        gap: 1.5rem;
+      }
+      .gesture-box {
+        font-size: 36px;
+        padding: 15px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">GesturePlay</div>
+    <ul class="nav-links">
+      <li><a href="chatgptkifile.html" class="active">Home</a></li>
+      <li><a href="newmain.html">Main Menu</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-wrapper">
+    <div class="gesture-box">[GesturePlay]</div>
+    <a href="newmain.html" style="text-decoration: none;">
+      <button class="start-button">Let's Start</button>
+    </a>
+  </div>
+
+</body>
+</html>
+
+```
