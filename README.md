@@ -53,9 +53,10 @@ Operate your media system using high-accuracy custom hand movements captured via
 └── assets/                  # Local project media assets (Backgrounds, Icons, etc.)
     ├── to_get.jpg
     └── pexels-pavel-danilyuk-8438979.jpg
+```
+---
+## GesturePlay: Smart Touchless Media Control System
 
-# GesturePlay: Smart Touchless Media Control System
-
-[![Live Demo](https://img.shields.io/badge/Demo-Live_Link-brightgreen?style=for-the-badge)](YOUR_LIVE_LINK_HERE)
+[![Live Demo](https://img.shields.io/badge/Demo-Live_Link-brightgreen?style=for-the-badge)](https://mohitponia18-web.github.io/gestureplay-/)
 
 > 🔗 **Test the live application here:** [GesturePlay Live Demo]()
